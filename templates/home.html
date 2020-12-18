@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" alt="my css">
+
+</head>
+
+<body>
+    <img src="/static/image/bajaj.png" alt="bajaj" class="image">
+    <div class="square-rating">
+        <p id="heading">Please rate your satisfaction on the following attributes of our service </p>
+
+        <h4>Responsiveness</h4>
+        <ul class="squares">
+            <li class="rectangle">Extremly bad</li>
+            <li class="rectangle">Bad</li>
+            <li class="rectangle">Neutral</li>
+            <li class="rectangle">Good</li>
+            <li class="rectangle">extremly good</li>
+            <li class="output1"></li>
+        </ul>
+
+        <h4>Competency in advising right solutions</h4>
+        <ul class="squares">
+            <li class="compt">Extremly bad</li>
+            <li class="compt">Bad</li>
+            <li class="compt">Neutral</li>
+            <li class="compt">Good</li>
+            <li class="compt">Extremly good</li>
+            <li class="output2"></li>
+        </ul>
+
+        <h4>Trustworthiness</h4>
+        <ul class="squares">
+            <li class="trust">Extremly bad</li>
+            <li class="trust">Bad</li>
+            <li class="trust">Neutral</li>
+            <li class="trust">Good</li>
+            <li class="trust">Extremly good</li>
+            <li class="output3"></li>
+        </ul>
+
+        <h4>Customer service and support</h4>
+        <ul class="squares">
+            <li class="cust">Extremly bad</li>
+            <li class="cust">Bad</li>
+            <li class="cust">Neutral</li>
+            <li class="cust">Good</li>
+            <li class="cust">Extremly good</li>
+            <li class="output4"></li>
+        </ul>
+
+        <button class="submit" onclick="submit()">Submit</button>
+
+    </div>
+    <script src="{% static 'js/home.js' %}" type="text/javascript"></script>
+
+</body>
+
+</html>
